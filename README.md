@@ -18,7 +18,7 @@ I do have professional dashboard work — Excel, Power BI, BigQuery, the whole s
 
 | Project | Description | Dataset | Tools |
 |--------|-------------|---------|-------|
-| [`atp-tennis-goat-analysis`](./atp-tennis-goat-analysis) | Is Djokovic's record a product of weakened competition? A data-driven look at the Big 3 rivalry — head-to-head records, quality of wins, and match difficulty across 2000–2026 ATP data. | [Kaggle](https://www.kaggle.com/datasets/dissfya/atp-tennis-2000-2023daily-pull) | Python, pandas, matplotlib, seaborn |
+| [`atp-tennis-goat-analysis`](./atp-tennis-GOAT-debate) | Is Djokovic's record a product of weakened competition? A data-driven look at the Big 3 rivalry — head-to-head records, quality of wins, and match difficulty across 2000–2026 ATP data. | [Kaggle](https://www.kaggle.com/datasets/dissfya/atp-tennis-2000-2023daily-pull) | Python, pandas, matplotlib, seaborn |
 
 > Each project folder has a Jupyter notebook (`.ipynb`) and a short README with context and findings.
 
