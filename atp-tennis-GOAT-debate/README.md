@@ -1,6 +1,6 @@
 # 🎾 ATP Tennis GOAT Debate — What Does the Data Actually Say?
 
-**Dataset:** ATP Tennis 2000–2023 | **Source:** Kaggle | **Tools:** Python, pandas, matplotlib, seaborn
+**Dataset:** ATP Tennis 2000–2026 | **Source:** Kaggle | **Tools:** Python, pandas, matplotlib, seaborn
 
 ---
 
@@ -33,12 +33,21 @@ Win totals don't tell the whole story. Who did they beat to get there? Were thos
 
 | | |
 |---|---|
-| **Source** | [Kaggle — ATP Tennis 2000–2023](https://www.kaggle.com/datasets/dissfya/atp-tennis-2000-2023daily-pull) |
-| **Coverage** | ATP tour matches from 2000 to 2023 |
-| **Rows** | Match-level data (one row per match) |
+| **Source** | [Kaggle — ATP Tennis 2000–2026](https://www.kaggle.com/datasets/dissfya/atp-tennis-2000-2023daily-pull) |
+| **Coverage** | ATP tour main draw matches from 2000 to 2026 |
+| **Version** | v1053, downloaded 29 March 2026 |
+| **Rows** | 67,288 matches (one row per match) |
 | **Key columns** | `Player_1`, `Player_2`, `Winner`, `Rank_1`, `Rank_2`, `Tournament`, `Series`, `Surface`, `Round`, `Score`, `Date`, `Odd_1`, `Odd_2` |
 
-The dataset for this project is included in the `Dataset` folder. The data is based on the version 1053 that is downloaded in 29 March 2026. A more updated data should not make a significant changes on the result of this analysis as Novak Djokovic is the only remain active player among the others 2 (Nadal and Federer).
+The dataset is included in the `Dataset` folder. A more recent version should not significantly change the findings — Djokovic is the only active player among the three, and Nadal retired in late 2024.
+
+**One scope note worth knowing upfront:** this dataset covers ATP Tour main draw matches only. Official ATP head-to-head records are slightly higher across all three rivalries because they include Davis Cup, Olympics, ATP Cup, and Laver Cup. The direction and conclusions of every finding in this analysis are consistent with official records — but for reference:
+
+| Matchup | This dataset | Official ATP (all competitions) |
+|---|---|---|
+| Djokovic vs Federer | 26–20 | 27–23 |
+| Djokovic vs Nadal | 29–25 | 30–29 |
+| Djokovic vs Nadal (GS only) | 7–9 Nadal | 7–11 Nadal |
 
 ---
 
@@ -53,7 +62,9 @@ Libraries, loading the CSV, first look at the data.
 Deriving what we need: match year, age at match time, Grand Slam flag, and match difficulty (straight sets vs. extended matches).
 
 **Section 2 — The Prime Era**
-When was each player actually at their peak? ATP ranking trends and Grand Slam title timelines, overlaid on the same chart so the picture is clear.
+When was each player actually at their peak? Year-end ATP rankings and Grand Slam title timelines per year, overlaid so the picture is clear.
+
+> Note: year-end rankings in this section are sourced directly from official ATP records rather than derived from the dataset. The dataset captures rank at match time, which becomes unreliable for players who retired injured mid-season — their rank stops updating while the rest of the field moves around them.
 
 **Section 3 — Head-to-Head**
 Direct matchup records between the Big 3 — overall, per year, per surface, and filtered to Grand Slams only.
