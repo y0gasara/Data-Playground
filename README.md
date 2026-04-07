@@ -1,10 +1,10 @@
-# 🧪 data-playground
+# 🧪 Data Playground
 
 > *"To most, raw data looks like a random mess of numbers. To me, it's a masterpiece waiting to be fabricated."*
 
 ---
 
-## Hey, welcome!
+## Hey, welcome to my data playground!
 
 I've spent the last 3 years in project and finance operations. Somewhere in there I realized that my favorite part of the job was never the operations — it was the moment the data started making sense.
 
@@ -18,9 +18,7 @@ I do have professional dashboard work — Excel, Power BI, BigQuery, the whole s
 
 | Project | Description | Dataset | Tools |
 |--------|-------------|---------|-------|
-| `project-name-here` | Short description of what you explored and what you found | Source | Python, pandas |
-| `project-name-here` | Short description of what you explored and what you found | Source | Python, matplotlib |
-| `project-name-here` | Short description of what you explored and what you found | Source | Python, pandas, matplotlib |
+| [`atp-tennis-goat-analysis`](./atp-tennis-goat-analysis) | Is Djokovic's record a product of weakened competition? A data-driven look at the Big 3 rivalry — head-to-head records, quality of wins, and match difficulty across 2000–2026 ATP data. | [Kaggle](https://www.kaggle.com/datasets/dissfya/atp-tennis-2000-2023daily-pull) | Python, pandas, matplotlib, seaborn |
 
 > Each project folder has a Jupyter notebook (`.ipynb`) and a short README with context and findings.
 
